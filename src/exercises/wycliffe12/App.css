@@ -1,0 +1,28 @@
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.header {
+  background: #1e3a5f; color: white; padding: 24px 8%;
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+}
+.header h1 { margin: 0; font-size: 1.8rem; }
+.header nav { display: flex; gap: 24px; }
+.header nav a { color: white; text-decoration: none; }
+.header nav a:hover { text-decoration: underline; }
+.main { width: min(850px, 100%); margin: 40px auto; padding: 0 20px; flex: 1; }
+.main h2 { margin: 0 0 24px; }
+.post-card {
+  background: white; padding: 24px; margin-bottom: 20px;
+  border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.post-card h3 { color: #1e3a5f; margin-top: 0; }
+.post-meta {
+  display: flex; justify-content: space-between; gap: 12px;
+  color: #777; font-size: 14px; margin-top: 20px;
+}
+.footer { background: #1e3a5f; color: white; text-align: center; padding: 20px; }
+.footer p { margin: 0; }
+@media (max-width: 600px) {
+  .header { flex-direction: column; }
+  .header nav { gap: 16px; }
+  .main { margin: 24px auto; }
+  .post-meta { flex-direction: column; }
+}
